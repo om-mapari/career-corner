@@ -2,8 +2,11 @@ import React, { useState, useEffect, useRef } from 'react'
 import ProductSlider from './Crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
 import Heading from './HomeSubComponents/Heading'
-import Brand from './HomeSubComponents/Brand'
+import BrandCard from './HomeSubComponents/BrandCard'
 import { Container } from 'react-bootstrap';
+import { brands, socialInit,TestimonialPerson } from '../Constant'
+import Testimonial from './HomeSubComponents/Testimonials';
+
 
 function Home() {
 
@@ -29,6 +32,7 @@ function Home() {
     };
   }, []);
 
+
   return (
     <div>
       <ProductSlider />
@@ -50,25 +54,47 @@ function Home() {
           {isVisible && <Timer />}
         </div>
 
-        <Heading heading="Social Initiatives" />
-        <Heading heading="Testimonials" />
+        <Heading heading="Our Brands" />
 
 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4 d-flex justify-content-center">
-              <Brand brandName="Merito Academy" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM-2.jpeg?resize=480%2C320&ssl=1" />
-            </div>
-            <div class="col-sm-4 d-flex justify-content-center">
-              <Brand brandName="Merito.in" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM.jpeg?resize=480%2C320&ssl=1" />
-            </div>
-            <div class="col-sm-4 d-flex justify-content-center">
-              <Brand brandName="Merito.in" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM.jpeg?resize=480%2C320&ssl=1" />
-            </div>
+        <div className="container">
+          <div className="row">
+            {
+              brands.map((ele, idx) => {
+                return (
+                  <div key={idx} className="col-sm-4 d-flex justify-content-center">
+                    <BrandCard {...ele} />
+                  </div>
+                )
+              })
+            }
+
           </div>
+
         </div>
 
+        <Heading heading="Social Initiatives" />
 
+        <div className="container">
+          <div className="row">
+            {
+              socialInit.map((ele, idx) => {
+                return (
+                  <div key={ele.brandName} className="col-sm-4 d-flex justify-content-center">
+                    <BrandCard {...ele} />
+                  </div>
+                )
+              })
+            }
+
+          </div>
+
+        </div>
+
+        
+        <Heading heading="Testimonials" />
+
+        <Testimonial TestimonialPerson={TestimonialPerson} />
 
       </Container>
     </div>

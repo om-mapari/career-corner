@@ -1,7 +1,7 @@
 import React from 'react'
 import './Brand.css';
 
-function Brand({brandName,mytext,imgUrl}) {
+function BrandCard({brandName,mytext,barndUrl}) {
     return (
         <div className="cont">
             <div className="text-cont">
@@ -10,10 +10,10 @@ function Brand({brandName,mytext,imgUrl}) {
                 <p> {mytext}</p>
             </div>
             
-            <img className='brand-img' src={imgUrl} alt="myimg"/>
+            <img className='brand-img' src={barndUrl} alt="myimg"/>
         </div>
 
     )
 }
 
-export default Brand
+export default BrandCard
