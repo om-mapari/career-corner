@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom'; // add this line
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import HoverNavLink from './reusableComp/HoverNavLink';
+import HoverNavLink from './HomeSubComponents/HoverNavLink';
 
 function CollapsibleExample() {
     const location = useLocation();
