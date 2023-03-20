@@ -3,7 +3,7 @@
 import React from 'react'
 import Home from './components/Home'
 import ContactInfo from './components/ContactInfo';
-import OurBrands from './components/OurBrands';
+import Brands from './components/Brands';
 import Programs from './components/Programs';
 import OurStory from './components/OurStory';
 import SocialInitiatives from './components/SocialInitiatives';
@@ -46,7 +46,7 @@ const appRouter = createBrowserRouter([
 
       {
         path: "/our-brands",
-        element: <OurBrands />,
+        element: <Brands />,
       },
       {
         path: "/initiatives",
