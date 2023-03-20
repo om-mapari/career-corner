@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import ProductSlider from './Crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
 import Heading from './HomeSubComponents/Heading'
-// import Brand from './HomeSubComponents/Brand'
+import Brand from './HomeSubComponents/Brand'
 import { Container } from 'react-bootstrap';
 
 function Home() {
@@ -53,7 +53,23 @@ function Home() {
         <Heading heading="Social Initiatives" />
         <Heading heading="Testimonials" />
 
-        {/* <Brand/> */}
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 d-flex justify-content-center">
+              <Brand brandName="Merito Academy" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM-2.jpeg?resize=480%2C320&ssl=1" />
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+              <Brand brandName="Merito.in" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM.jpeg?resize=480%2C320&ssl=1" />
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+              <Brand brandName="Merito.in" mytext="Our Brand" imgUrl="https://i0.wp.com/career-corner.in/wp-content/uploads/2022/05/WhatsApp-Image-2022-06-16-at-3.01.04-PM.jpeg?resize=480%2C320&ssl=1" />
+            </div>
+          </div>
+        </div>
+
+
+
       </Container>
     </div>
   )

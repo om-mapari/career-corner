@@ -1,21 +1,26 @@
-.container {
-    border: solid;
+.cont {
     position: relative;
     width: 300px;
     height: 300px;
     overflow: hidden;
-    
+    /* padding: 10px; add padding here */
+    margin: 4px;
+    /* border: none; added to remove border */
 }
 
-img {
-    width: 300px;
-    height: 300px;
-
+.brand-img {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    /* transition: bottom 0.3s ease-in-out; */
+    border: none; /* added to remove border */
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
-.text-container {
+
+
+.text-cont {
     margin: 0;
     width: 30px;
     height: 30px;
@@ -25,24 +30,27 @@ img {
     display: block;
     position: absolute;
     width: 100%;
-    top: -70px; /* width of text container plus 2*bottom padding */
+    top: -70px; /* width of text cont plus 2*bottom padding */
     transition: all .6s;
     border: solid;
+    border: none; /* added to remove border */
+    color: aliceblue;
+
     /* background-color: rgba(194, 112, 112, 0.8); */
     /* Transition effect for smooth animation */
 }
-.container:hover img {
+.cont:hover .brand-img {
     transition: all 0.5s ease-in-out;
     transform: translateY(50px);
     opacity: 0.5;
 }
-.container:hover .text-container {
+.cont:hover .text-cont {
     visibility: visible;
     transform: translateY(50px);
-    /* The final position of the hidden text when the container is hovered over */
+    /* The final position of the hidden text when the cont is hovered over */
 }
 
 
-.container:hover {
+.cont:hover {
     background-color: #f92424;
 }
