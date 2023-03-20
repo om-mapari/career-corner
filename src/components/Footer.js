@@ -40,7 +40,7 @@ function Footer() {
         </div>
         <hr />
         <div className="text-center" >
-          <p style={{ color: '#999999' }}> Career Corner 2022</p>
+          <p style={{ color: '#999999' }}> 2023 Career Corner. All Rights Reserved</p>
         </div>
       </div>
     </footer>
