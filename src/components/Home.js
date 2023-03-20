@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductSlider from './crousal/ProductSlider'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <ProductSlider/>
+    </div>
   )
 }
 
