@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import ProductSlider from './Crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
 import Heading from './HomeSubComponents/Heading'
+// import Brand from './HomeSubComponents/Brand'
 import { Container } from 'react-bootstrap';
 
 function Home() {
@@ -52,7 +53,7 @@ function Home() {
         <Heading heading="Social Initiatives" />
         <Heading heading="Testimonials" />
 
-
+        {/* <Brand/> */}
       </Container>
     </div>
   )

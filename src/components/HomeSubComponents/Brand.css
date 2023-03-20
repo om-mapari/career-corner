@@ -1,0 +1,48 @@
+.container {
+    border: solid;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+img {
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    /* transition: bottom 0.3s ease-in-out; */
+}
+
+.text-container {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    /* visibility: hidden; */
+    text-align: left;
+    padding: 15px 35px 20px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -70px; /* width of text container plus 2*bottom padding */
+    transition: all .6s;
+    border: solid;
+    /* background-color: rgba(194, 112, 112, 0.8); */
+    /* Transition effect for smooth animation */
+}
+.container:hover img {
+    transition: all 0.5s ease-in-out;
+    transform: translateY(50px);
+    opacity: 0.5;
+}
+.container:hover .text-container {
+    visibility: visible;
+    transform: translateY(50px);
+    /* The final position of the hidden text when the container is hovered over */
+}
+
+
+.container:hover {
+    background-color: #f92424;
+}
