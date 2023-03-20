@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const ProductCard = (props) => {
+const ImageCard = (props) => {
   return (
     <>
       <Card style={{ width: "inherit" }}>
@@ -11,4 +11,4 @@ const ProductCard = (props) => {
   );
 };
 
-export default ProductCard;
+export default ImageCard;

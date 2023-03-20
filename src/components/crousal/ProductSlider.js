@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import ProductCard from "./ProductCard";
+import ImageCard from "./ImageCard";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -80,7 +80,7 @@ class ProductSlider extends Component {
           {this.state.slides.map((slide, index) => {
             return (
               <div key={index}>
-                <ProductCard imgSrc={slide.img} />
+                <ImageCard imgSrc={slide.img} />
               </div>
             );
           })}
