@@ -14,7 +14,7 @@ const HoverNavLink = ({ to, children, isActive }) => {
 
   return (
     <NavLink
-      exact
+      exact="true"
       to={to}
       className="nav-link m-1"
       style={{

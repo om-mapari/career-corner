@@ -13,7 +13,7 @@ function CollapsibleExample() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
             <Container>
-                <Navbar.Brand >
+            <Navbar.Brand >
                     <Link to="/" className="nav-link shadow-lg p-0 bg-body-tertiary rounded">
                         <img
                             src={logo}

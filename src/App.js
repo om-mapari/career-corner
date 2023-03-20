@@ -4,7 +4,7 @@ import React from 'react'
 import Home from './components/Home'
 import ContactInfo from './components/ContactInfo';
 import OurBrands from './components/OurBrands';
-import OurPrograms from './components/OurPrograms';
+import Programs from './components/Programs';
 import OurStory from './components/OurStory';
 import SocialInitiatives from './components/SocialInitiatives';
 import Error from './components/Error'
@@ -37,7 +37,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/programs",
-        element: <OurPrograms />,
+        element: <Programs />,
       },
       {
         path: "/about",
