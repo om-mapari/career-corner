@@ -1,13 +1,15 @@
 import logo from '../assets/logo.jpg';
-import { Link } from 'react-router-dom'; // add this line
+import { Link, useLocation } from 'react-router-dom'; // add this line
 
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import HoverLink from './reusableComp/HoverLink';
+import HoverNavLink from './reusableComp/HoverNavLink';
 
 function CollapsibleExample() {
+    const location = useLocation();
+
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
             <Container>
@@ -26,12 +28,12 @@ function CollapsibleExample() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"> </Nav>
-                    <Nav>
-                        <HoverLink to="/programs">OUR PROGRAMS</HoverLink>
-                        <HoverLink to="/about">OUR STORY</HoverLink>
-                        <HoverLink to="/our-brands">OUR BRANDS</HoverLink>
-                        <HoverLink to="/initiatives">SOCIAL INITIATIVES</HoverLink>
-                        <HoverLink to="/contact-us">CONTACT US</HoverLink>
+                    <Nav className=''>
+                        <HoverNavLink to="/programs" isActive={location.pathname === '/programs'}  >OUR PROGRAMS</HoverNavLink>
+                        <HoverNavLink to="/about" isActive={location.pathname === '/about'}  >OUR STORY</HoverNavLink>
+                        <HoverNavLink to="/our-brands" isActive={location.pathname === '/our-brands'}  >OUR BRANDS</HoverNavLink>
+                        <HoverNavLink to="/initiatives" isActive={location.pathname === '/initiatives'}  >SOCIAL INITIATIVES</HoverNavLink>
+                        <HoverNavLink to="/contact-us" isActive={location.pathname === '/contact-us'}>CONTACT US</HoverNavLink>
 
                     </Nav>
                 </Navbar.Collapse>

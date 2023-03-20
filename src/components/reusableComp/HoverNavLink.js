@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const HoverLink = ({ to, children }) => {
+const HoverNavLink = ({ to, children, isActive }) => {
   const [hovered, setHovered] = React.useState(false);
 
   const handleMouseEnter = () => {
@@ -13,18 +13,20 @@ const HoverLink = ({ to, children }) => {
   };
 
   return (
-    <Link
+    <NavLink
+      exact
       to={to}
-      className="nav-link"
+      className="nav-link m-1"
       style={{
         textDecoration: 'none',
-        borderBottom: `2px solid ${hovered ? 'black' : 'transparent'}`,
+        borderBottom: `2px solid ${hovered || isActive ? 'black' : 'transparent'}`,
+        fontWeight: isActive ? 'bold' : 'normal',
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       {children}
-    </Link>
+    </NavLink>
   );
 };
 
-export default HoverLink
+export default HoverNavLink
