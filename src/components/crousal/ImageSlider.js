@@ -49,6 +49,7 @@ class ImageSlider extends Component {
       initialSlide: 0,
       autoplay: true,
       autoplaySpeed: 2000,
+      pauseOnHover: false, 
       responsive: [
         {
           breakpoint: 1024,
