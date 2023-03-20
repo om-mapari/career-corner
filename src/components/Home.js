@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ProductSlider from './Crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
+import Heading from './HomeSubComponents/Heading'
 import { Container } from 'react-bootstrap';
 
 function Home() {
@@ -34,28 +35,23 @@ function Home() {
       <div className="p-1" style={{ width: '100%', background: '#FF9900' }}> </div>
 
       <Container className="text-center my-5">
-        <h1>
-          <span style={{ fontWeight: 'bold', color: '#FF9900' }}>
-            About Us
-          </span>
-        </h1>
+        <Heading heading="About Us" />
+
         <p className="fs-5 lead text-secondary text-center px-4">
           Career Corner is a career services platform founded by COEP and IIM Ahmedabad alumnus with the goal of equipping students and professionals for their career development. Since its inception in 2011 as DISHA, Career Corner has assisted over 50,000 students and professionals in choosing the RIGHT career for them.
           <br /> <br />We have launched career-oriented programs alongside social initiatives geared towards helping people gain professional excellence.
         </p>
-        <hr className="bg-dark" />
-
-        <h1>
-          <span style={{ fontWeight: 'bold', color: '#FF9900' }}>
-            Our Impact
-          </span>
-        </h1>
 
 
+        <Heading heading="Our Impact" />
 
         <div ref={ref}>
           {isVisible && <Timer />}
         </div>
+
+        <Heading heading="Social Initiatives" />
+        <Heading heading="Testimonials" />
+
 
       </Container>
     </div>
