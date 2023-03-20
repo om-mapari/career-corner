@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'; // add this line
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import HoverLink from './reusableComp/HoverLink';
 
 function CollapsibleExample() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
             <Container>
                 <Navbar.Brand >
-                    <Link to="/" className="nav-link">
+                    <Link to="/" className="nav-link shadow-lg p-0 bg-body-tertiary rounded">
                         <img
                             src={logo}
                             height="60"
@@ -26,11 +27,11 @@ function CollapsibleExample() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"> </Nav>
                     <Nav>
-                        <Link to="/programs" className="nav-link">OUR PROGRAMS</Link>
-                        <Link to="/about" className="nav-link">OUR STORY</Link>
-                        <Link to="/our-brands" className="nav-link">OUR BRANDS</Link>
-                        <Link to="/initiatives" className="nav-link">SOCIAL INITIATIVES</Link>
-                        <Link to="/contact-us" className="nav-link">CONTACT US</Link>
+                        <HoverLink to="/programs">OUR PROGRAMS</HoverLink>
+                        <HoverLink to="/about">OUR STORY</HoverLink>
+                        <HoverLink to="/our-brands">OUR BRANDS</HoverLink>
+                        <HoverLink to="/initiatives">SOCIAL INITIATIVES</HoverLink>
+                        <HoverLink to="/contact-us">CONTACT US</HoverLink>
 
                     </Nav>
                 </Navbar.Collapse>
