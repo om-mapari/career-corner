@@ -8,7 +8,7 @@ import inst from '../../assets/inst.png'
 
 const SocialMediaLinks = () => {
     return (
-        <Container className="d-flex justify-content-center" >
+        <Container className="d-flex justify-content-center my-2" >
             <Row>
                 <Col md={3} className="text-center">
                     <a href="https://www.facebook.com">

@@ -18,7 +18,7 @@ function ContactUs() {
 
       <Contact/>
 
-      <SocialMediaLinks/>
+      <SocialMediaLinks />
       <LiveMap />
     </div>
   )

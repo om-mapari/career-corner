@@ -4,12 +4,34 @@ import { Container } from 'react-bootstrap';
 import CourseCard from './ProgramSubComponents/CourseCard';
 import { courseData } from '../Constant'
 import BigHeading from './Common/BigHeading';
+import OurVisionComponent from './AboutSubComponents/OurVisionComponent';
 
 
 function Programs() {
 
 
-
+  const faqData = [
+      {
+        question : 'WHAT HAPPENS ONCE I REGISTER?',
+        answer : 'Post your register after paying fees we will share a test link on your registered email ID. If you are enrolled for the counselling we will call you to discuss the available time slots and assign one for you.'
+      },
+      {
+        question : 'WHO CAN TAKE THIS TEST?',
+        answer : 'Students from class 9 to graduation can take this test. We have different test for different age groups.'
+      },
+      {
+        question : 'CAN I OPT FOR ONLY COUNSELLING SESSION ?',
+        answer : 'No, taking up the test is must before you attend your counselling session. The test helps our experts to know about your ability, interest and personality.'
+      },
+      {
+        question : 'HOW THE COUNSELLING SESSION IS CONDUCTED?',
+        answer : 'The counselling session will be conducted on Zoom. Both students as well as parents can attend the session'
+      },
+      {
+        question : 'HOW LONG THE TEST AND COUNSELLING SESSION IS?',
+        answer : 'The online test takes 45 mins time and the counselling session is also 45 mins. If you have any followup questions you can always ask them on email/whatsapp'
+      }
+  ]
 
   return (
     <div>
@@ -43,6 +65,10 @@ function Programs() {
             />
           ))}
         </div>
+        <Heading heading="FAQs" />
+        {
+          faqData.map(el => <OurVisionComponent key={el.question} PointHeading= {el.question} Point= {el.answer}  />)
+        }
 
       </Container>
     </div>
