@@ -87,3 +87,18 @@ export const courseData = [
     // Add more courses as needed...
   ];
 
+
+  export const OurStoryData = [
+    {
+      PointHeading: 'Our Vision',
+      Point: 'Our goal is to become Indias foremost career services organization, providing students and professionals with comprehensive career services'
+    },
+    {
+      PointHeading: 'Our Mission Statement',
+      Point: 'To democratise career education for the public by collaborating with individuals, educational institutes, and Non-Government Organizations'
+    },
+    {
+      PointHeading: 'Our Belief System',
+      Point: 'We are a team of dedicated individuals who were fortunate to get education from India’s premium engineering and management colleges. We felt indebted to schools we attended and guidance we received from our teachers which made our career journey possible. Career Corner is nothing but our combined effort to give back what we have received!'
+    }
+  ]
