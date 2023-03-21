@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from './HomeSubComponents/Heading';
+import Heading from './Common/Heading';
 import { Container } from 'react-bootstrap';
 import CourseCard from './ProgramSubComponents/CourseCard';
 import { courseData } from '../Constant'
