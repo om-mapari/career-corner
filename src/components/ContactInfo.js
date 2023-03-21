@@ -1,8 +1,12 @@
 import React from 'react'
+import BigHeading from './Common/BigHeading';
 
 function ContactInfo() {
   return (
-    <div>ContactInfo</div>
+    <div>
+      <BigHeading bigHeading="CONTACT US" currentPage="Contact Us" />
+
+    </div>
   )
 }
 

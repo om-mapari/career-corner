@@ -3,6 +3,7 @@ import Heading from './HomeSubComponents/Heading';
 import { Container } from 'react-bootstrap';
 import CourseCard from './ProgramSubComponents/CourseCard';
 import { courseData } from '../Constant'
+import BigHeading from './Common/BigHeading';
 
 
 function Programs() {
@@ -12,6 +13,8 @@ function Programs() {
 
   return (
     <div>
+      <BigHeading bigHeading="OUR PROGRAMS" currentPage="Our Programs" />
+
       <Container className="text-center my-5">
         <h1 style={{ fontWeight: 'bold', color: 'black', paddingLeft: '20%', paddingRight: '20%' }}>
           <span className='fs-1'>

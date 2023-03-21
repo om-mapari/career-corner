@@ -1,11 +1,9 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React from 'react'
 import Home from './components/Home'
 import ContactInfo from './components/ContactInfo';
 import Brands from './components/Brands';
 import Programs from './components/Programs';
-import OurStory from './components/OurStory';
+import AboutUs from './components/AboutUs';
 import SocialInitiatives from './components/SocialInitiatives';
 import Error from './components/Error'
 import { createBrowserRouter, Outlet } from "react-router-dom";
@@ -41,7 +39,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <OurStory />,
+        element: <AboutUs />,
       },
 
       {
