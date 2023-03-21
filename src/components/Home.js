@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ProductSlider from './Crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
-import Heading from './HomeSubComponents/Heading'
+import Heading from './Common/Heading'
 import BrandCard from './HomeSubComponents/BrandCard'
 import { Container } from 'react-bootstrap';
 import { brands, socialInit,TestimonialPerson } from '../Constant'
