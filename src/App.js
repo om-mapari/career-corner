@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './components/Home'
-import ContactInfo from './components/ContactInfo';
+import ContactUs from './components/ContactUs';
 import Brands from './components/Brands';
 import Programs from './components/Programs';
 import AboutUs from './components/AboutUs';
@@ -52,7 +52,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/contact-us", // useParams to get restId
-        element: <ContactInfo />,
+        element: <ContactUs />,
       },
     ],
   },
