@@ -65,3 +65,25 @@ export const TestimonialPerson = [
         personTestimonial : "“I can see most of the are making default career choices like engineering and MBA however most of them need to ask what is  best career suitable career for me and choose the same”"
     }
 ]
+
+
+export const courseData = [
+    {
+      courseName: 'Career Assessment Test',
+      courseDetails: `Our career assessment tests help students to discover their aptitude as well as personality. The test is conducted online and report is shared over the email. 
+
+      The test report also covers matching study streams and careers based on students ability, interest and personality. `,
+      courseFees: 1000,
+      imageUrl: 'https://i0.wp.com/career-corner.in/wp-content/uploads/2022/06/Test.webp?resize=1024%2C768&ssl=1'
+    },
+    {
+      courseName: 'Career Assessment Test & Counselling',
+      courseDetails: `This program consists of career assessment test followed by counselling session by our expert counsellors. Bot the test as well as counselling session would be online. 
+
+      The test helps student to discover their aptitude and personality. The counselling session helps to identify RIGHT career for them. `,
+      courseFees: 2000,
+      imageUrl: 'https://i0.wp.com/career-corner.in/wp-content/uploads/2022/06/Guidance.webp?resize=1024%2C768&ssl=1'
+    },
+    // Add more courses as needed...
+  ];
+
