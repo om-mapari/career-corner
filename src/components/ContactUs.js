@@ -2,6 +2,7 @@ import React from 'react'
 import BigHeading from './Common/BigHeading';
 import { Container } from 'react-bootstrap';
 import Contact from './ContactSubComponents/Contact';
+import SocialMediaLinks from './ContactSubComponents/SocialMediaLinks';
 
 function ContactUs() {
   return (
@@ -15,6 +16,8 @@ function ContactUs() {
       </Container>
 
       <Contact/>
+
+      <SocialMediaLinks/>
     </div>
   )
 }

@@ -83,28 +83,7 @@ function Contact() {
             </Row>
 
 
-            <Row>
-                <Col md={3} className="text-center">
-                    <a href="https://www.facebook.com">
-                        <img src="/path/to/facebook-logo.png" alt="Facebook" />
-                    </a>
-                </Col>
-                <Col md={3} className="text-center">
-                    <a href="https://www.linkedin.com">
-                        <img src="/path/to/linkedin-logo.png" alt="LinkedIn" />
-                    </a>
-                </Col>  
-                <Col md={3} className="text-center">
-                    <a href="https://www.youtube.com">
-                        <img src="/path/to/youtube-logo.png" alt="YouTube" />
-                    </a>
-                </Col>
-                <Col md={3} className="text-center">
-                    <a href="https://www.instagram.com">
-                        <img src="/path/to/instagram-logo.png" alt="Instagram" />
-                    </a>
-                </Col>
-            </Row>
+
 
 
         </Container>
@@ -112,17 +91,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-// import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
-
-// const SocialMediaLinks = () => {
-//   return (
-//     <Container className="d-flex justify-content-center">
-
-//     </Container>
-//   );
-// };
-
-// export default SocialMediaLinks;
