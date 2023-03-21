@@ -13,7 +13,6 @@ const Testimonial = ({TestimonialPerson}) => {
         autoplay: true,
         autoplaySpeed: 3000,
     };
-    console.log(TestimonialPerson);
     return (
         <div className="container py-5">
             <Slider {...settings}>
@@ -21,7 +20,7 @@ const Testimonial = ({TestimonialPerson}) => {
                 {
                     TestimonialPerson.map((el)=>{
                         return (
-                            <div>
+                            <div key={el.personName}>
                                 <img
                                     src={el.personImage}
                                     alt={el.personName}
