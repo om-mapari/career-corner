@@ -5,7 +5,7 @@ function Heading({ heading }) {
         <>
             { heading !== 'About Us'&& <hr className="bg-dark" />}
             <h1>
-                <span style={{ fontWeight: 'bold', color: '#FF9900' }}>
+                <span style={{ fontWeight: 'bold', color: '#E67C1E' }}>
                     {heading}
                 </span>
             </h1>
