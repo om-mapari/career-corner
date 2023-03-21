@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import ProductSlider from './Crousal/ImageSlider'
+import ProductSlider from './crousal/ImageSlider'
 import Timer from './HomeSubComponents/Timer';
 import Heading from './Common/Heading'
 import BrandCard from './HomeSubComponents/BrandCard'
